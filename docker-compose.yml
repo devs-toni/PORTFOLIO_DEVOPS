@@ -9,5 +9,5 @@ services:
     stdin_open: true
 
 networks:
-  net:
-    external: false
+  default:
+    name: servporops_net
