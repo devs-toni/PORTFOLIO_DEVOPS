@@ -1,13 +1,13 @@
-version: '2.6'
+version: '3.8'
 
 services:
   frontend:
-    container_name: servporfrnt
+    container_name: PORTFOLIO_SERVICE
     image: devstoni/arcp:0.1.20
     ports:
-      - 5173:5173
+      - $HOST_PORT:5173
     stdin_open: true
 
 networks:
-  default:
-    name: servporops_net
+  net:
+    external: False
