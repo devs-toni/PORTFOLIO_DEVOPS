@@ -2,11 +2,13 @@ version: '3.8'
 
 services:
   frontend:
-    container_name: PORTFOLIO_SERVICE
+    container_name: portfolio_client
     image: devstoni/arcp:0.1.20
     ports:
       - $HOST_PORT:5173
     stdin_open: true
+    networks:
+      - net
 
 networks:
   net:
