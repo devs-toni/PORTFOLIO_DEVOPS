@@ -4,6 +4,7 @@ services:
   frontend:
     container_name: portfolio-client
     image: devstoni/arcp:0.1.20
+    restart: unless-stopped
     ports:
       - $CLIENT_HOST_PORT:5173
     stdin_open: true
