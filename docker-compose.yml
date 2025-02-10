@@ -1,9 +1,7 @@
-version: '3.8'
-
 services:
   portfolio_frontend:
     container_name: portfolio-client
-    image: devstoni/arcp:0.1.25
+    image: devstoni/arcp:0.1.26
     restart: unless-stopped
     ports:
       - $CLIENT_HOST_PORT:80
